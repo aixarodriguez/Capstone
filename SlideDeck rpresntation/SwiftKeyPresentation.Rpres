@@ -24,20 +24,20 @@ Model creation
 
 The original corpus for this project consist of 3 raw text files, which comes from blogs, twitter and news (about 580MB). 
 
-The data was cleaned (**stringi package**), tokenized and n-gram objects was builted (**quanteda package**) in levels from one to five. This construct was tabulated in order to get the probability of apperance each n-gram.
+The data was cleaned (**stringi package**), tokenized and a several n-gram objects was builted (**quanteda package**) in levels from one to five. This construct was tabulated in order to get the probability the word apperance each n-gram file.
 
-Finnaly an algorithm was develop in order to select the next prediction word based in the amount of words given and their probability in the largest n-gram and back to `n-1` gram if no matches were found.
+Finally an algorithm was develop in order to select the next prediction word based in the amount of words given and their probability in the largest n-gram and back to `n-1` gram if no matches were found.
 
 
 Prediction Algorithm
 ========================================================
 
-A prediction algorithm was develop based on the Kat's Back-off model, where the conditional probability of a word is estimated based on the context of the preceding words. Each n-gram object was ordered based on the raw probability and using this property filters was applied in order to get the most probable next word.  
+A prediction algorithm was develop based on the Kat's Back-off model, where the conditional probability of a word is estimated based on the context of the preceding words. Each n-gram object was ordered based on the raw probability and using proper filters was applied in order to get the most probable next word.  
 
 <small>
 **Example: For a given text of 4 words:**  
 **1 -** Search for match in the first *4* words of *5-gram* object and select **n** most probable words.  
-**2 -** If the **n** words selected are less than *10* (for example), cut a word of a given text by que left, so we have *3* words now.  
+**2 -** If the **n** words selected are less than *10* (for example), cut a word of a given text by the left, so we have *3* words now.  
 **3 -** Search for match in the first *3* words of *4-gram* object and select **n** most probable words.  
 **4 -** If the **n** words selected are less than the requiered amount of predicted words: Repeat the steps in *2 -> 3*  until the *1-gram* object.
 </small>
@@ -45,11 +45,11 @@ A prediction algorithm was develop based on the Kat's Back-off model, where the 
 
 Shiny Application
 ========================================================
-The interactive web application was hosted at **shiny.io** and can be tested in this link: https://olitroski.shini.app
+The interactive web application was hosted at **shiny.io** and can be tested in this link: https://olitroski.shinyapps.io/CapstoneProject/
 
 1. Input the text word by word in the left panel
 
-2. For every word you digit you will see in the main panel three results:  
+2. For every word you write, you will see in the main panel three results:  
      + The entire text you had tiping
      + The predicted word
      + The next **n** more words probable words
@@ -73,8 +73,7 @@ The following tools was used in this project.
 * **shiny package** and *ShinyApps* via **RStudio** to develop the web application of my algorithm.
 </small>
 
-All the code can be found in this repository
-[GitHub](https://github.com/olitroski/Capstone)
+
 
 
 

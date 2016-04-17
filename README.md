@@ -19,3 +19,12 @@ A disclaimer, sorry about my english. I speak spanish by default.
 Oh and of course I left to you the algorithm.
 
 Live long and prosper.... :P
+
+http://rpubs.com/olitroski/slidedeck
+
+https://olitroski.shinyapps.io/CapstoneProject/
+
+
+
+
+
