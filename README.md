@@ -15,6 +15,7 @@ A disclaimer, sorry about my english. I speak spanish by default.
 Oh and of course I left to you the algorithm in a script.
 
 Live long and prosper.... :P
+BTW: if you want to run the app, you need to setwd() in the folder where you have the ui, server, and folder with the data.
 
 http://rpubs.com/olitroski/slidedeck
 
